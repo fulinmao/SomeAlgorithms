@@ -41,7 +41,7 @@ public class InorderTree {
 		return head;
 	}
 
-	public static List<Integer> inOrderTree(TreeNode head){
+		public static List<Integer> inOrderTree(TreeNode head){
 		List<Integer> list = new ArrayList<Integer>();
 		if(head == null){
 			return list;
