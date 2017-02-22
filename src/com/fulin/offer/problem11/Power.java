@@ -30,10 +30,10 @@ public class Power {
             absExponent = -exponent;
         }
 
-        double value = powerUnsignedIntExponent(base, absExponent);
+        result = powerUnsignedIntExponent(base, absExponent);
 
         if(exponent < 0){	// 情况2：指数为负数，需取倒数
-            result = 1.0 / value;
+            result = 1.0 / result;
         }
 
         return result;
@@ -55,7 +55,7 @@ public class Power {
 
     private static double powerUnsignedIntExponent(double base , int exponent){
         double result = 1.0;
-        for(int i=0;i<=exponent;i++){
+        for(int i=0;i< exponent;i++){
             result *= base;
         }
 
