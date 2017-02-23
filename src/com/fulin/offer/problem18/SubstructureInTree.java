@@ -11,7 +11,6 @@ import com.fulin.utils.TreeNode;
 public class SubstructureInTree {
 
     public static void main(String[] args) {
-// TODO Auto-generated method stub
         TreeNode A = new TreeNode(8);
         A.left = new TreeNode(8);
         A.rigth = new TreeNode(7);
