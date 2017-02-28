@@ -13,15 +13,15 @@ public class SubstructureInTree {
     public static void main(String[] args) {
         TreeNode A = new TreeNode(8);
         A.left = new TreeNode(8);
-        A.rigth = new TreeNode(7);
+        A.right = new TreeNode(7);
         A.left.left = new TreeNode(9);
-        A.left.rigth = new TreeNode(2);
+        A.left.right = new TreeNode(2);
 
-        A.left.rigth.left = new TreeNode(4);
-        A.left.rigth.rigth = new TreeNode(4);
+        A.left.right.left = new TreeNode(4);
+        A.left.right.right = new TreeNode(4);
         TreeNode B = new TreeNode(8);
         B.left = new TreeNode(9);
-        B.rigth = new TreeNode(3);
+        B.right = new TreeNode(3);
 
         boolean result = subStructureInTree(A, B);
         System.out.println(result);
@@ -50,7 +50,7 @@ public class SubstructureInTree {
         }
 
         if (!result) {
-            result = subStructureInTree(ATree.rigth, BTree);
+            result = subStructureInTree(ATree.right, BTree);
         }
 
         return result;
@@ -72,7 +72,7 @@ public class SubstructureInTree {
 
         boolean result = (ATree.val == BTree.val)
                 && (doesTree1HaveTree2(ATree.left, BTree.left))
-                && (doesTree1HaveTree2(ATree.rigth, BTree.rigth));
+                && (doesTree1HaveTree2(ATree.right, BTree.right));
         return result;
     }
 }
