@@ -38,7 +38,6 @@ class SingletonRunnable implements Runnable{
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		Singleton instance = Singleton3.getInstance();
 		instance.run();
 	}
