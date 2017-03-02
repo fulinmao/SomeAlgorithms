@@ -43,7 +43,7 @@ public class StackPushPopOrder {
             int number = nums2[i];
             int index = search(nums1,start,number);
             if(index != -1){
-// 需要把 指定的元素加入到栈中
+            // 需要把 指定的元素加入到栈中
                 for(int j=start;j<=index;j++){
                     stack1.push(nums1[j]);
                 }
