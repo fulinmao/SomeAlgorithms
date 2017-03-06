@@ -11,7 +11,7 @@ package com.fulin.offer.problem32;
 public class NumberOf1 {
 
     public static void main(String[] args){
-        int num = 12 ;
+        int num = 1;
         int result = numberOf1(num);
         System.out.print(result);
     }
@@ -34,11 +34,11 @@ public class NumberOf1 {
 
         char[] strArray = str.toCharArray();
 
-        if(str.length() == 0 && strArray[0] == '0'){
+        if(str.length() == 1 && strArray[0] == '0'){
             return result;
         }
 
-        if(str.length() == 0 && strArray[0] - '0' > 0){
+        if(str.length() == 1 && strArray[0] > '0'){
             result = 1;
             return result;
         }
